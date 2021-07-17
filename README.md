@@ -1,3 +1,20 @@
 # Jonny Cano's Portfolio
 
-## I have collected all my work so far into this display of my skill as a web designer
+## Purpose
+I have collected some of my work so far into this display of my skill as a web designer
+
+## Built With
+* HTML
+* CSS
+* JavaScript
+
+## Website
+https://JonnyCano.github.io/brazil
+
+## gitHub Repository
+https://github.com/JonnyCano/brazil/
+
+## Contribution
+Made with ❤️ by Jonny Cano
+
+## © 2021 Jonny, Inc
