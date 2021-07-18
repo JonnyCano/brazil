@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="./assets/css/master-style.css">
+
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
+
 </head>
 
 <body>
@@ -38,13 +41,13 @@
                                 <a href="testing.html">Testing</a>
                             </li>
                             <li>
-                                <a title="w3schools" href="https://www.w3schools.com">Blog</a>
+                                <a title="Posts" href="post.html">Blog</a>
                             </li>
                             <li title="github">
                                 <a href="https://github.com/JonnyCano">Projects</a>
                             </li>
                             <li title="Contact Form">
-                                <a href="#">Contact</a>
+                                <a href="#contact-form">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -55,14 +58,14 @@
                     <h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
 
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
 
                     <p id="settings-note">
-                        *Them settings will be saved for<br> your next visit
+                        *Theme settings will be saved for<br> your next visit
                     </p>
 
                 </div>
@@ -142,9 +145,9 @@
                         <img id="social_img" src="assets/images/possibilities.jpg" alt="Jonny_Full_Body_Pic">
                         <h3>Find me on Twitter & YouTube</h3>
 
-                        <a target="_blank" href="#">GitHub: @JonnyCano</a>
+                        <a target="_blank" href="https://github.com/JonnyCano/">GitHub: @JonnyCano</a>
                         <br>
-                        <a target="_blank" href="#">Twitter: @JonnyCano</a>
+                        <a target="_blank" href="https://www.linkedin.com/in/jonathan-cano-pineda-426509b3/">LinkedIn: @Jonathan_Cano-Pineda</a>
                     </div>
 
                 </div>
@@ -159,7 +162,7 @@
                 <div class="post-wrapper">
                     <div>
                         <div class="post">
-                            <img class="thumbnail" src="./assets/images/run-buddy.png" alt="flex-box_project" />
+                            <img class="thumbnail" src="./assets/images/run-buddy.png" href="https://JonnyCano.github.io/run-buddy/" alt="run-buddy_project" />
                             <div class="post-preview">
                                 <h6 class="post-title">Run Buddy</h6>
                                 <p class="post-intro">A website that offers fitness training services. Built by me through instruction from UW and U2.</p>
@@ -170,22 +173,22 @@
 
                     <div>
                         <div class="post">
-                            <img class="thumbnail" src="./assets/images/robot-gladiators.png" alt="flex-box_project" />
+                            <img class="thumbnail" src="./assets/images/taskinator-by-Jonny.png" href="https://jonnycano.github.io/taskinator/" alt="taskinator-by-Jonny_project" />
                             <div class="post-preview">
-                                <h6 class="post-title">Robot Gladiators</h6>
-                                <p class="post-intro">This showcases my JavaScript skill in all its glory</p>
-                                <a href="https://jonnycano.github.io/robot-gladiators/">Read More</a>
+                                <h6 class="post-title">taskinator, by Jonny</h6>
+                                <p class="post-intro">This showcases my JavaScript skill in all its glory. Persistent data here I come.</p>
+                                <a href="https://github.com/JonnyCano/taskinator/">Read More</a>
                             </div>
                         </div>
                     </div>
 
                     <div>
                         <div class="post">
-                            <img class="thumbnail" src="./assets/images/hero.jpg" alt="flex-box_project" />
+                            <img class="thumbnail" src="./assets/images/who-would-win.png" href="https://rrcampbell-exe.github.io/who-would-win/" alt="who-would-win_project" />
                             <div class="post-preview">
-                                <h6 class="post-title">Jonathan Cano</h6>
-                                <p class="post-intro">This site I built from the byte up. I am truly glad you came.</p>
-                                <a href="#">Read More</a>
+                                <h6 class="post-title">WhO-wOuLd-WiN?</h6>
+                                <p class="post-intro">This website pits the ultimate fighters from the realm of Dungeons and Dragons against Pokémon.Let's fight!</p>
+                                <a href="https://github.com/rrcampbell-exe/who-would-win">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -196,19 +199,35 @@
 
         <section class="s2">
             <div class="main-container">
-                Contact
+                <h3 style ="text-align: center;">Get In Touch</h3>
+
+                <form id="contact-form">
+                    <label>Name</label>
+                    <input class="input-field" type="text" name="name" placeholder="Enter your name here...">
+
+                    <label>Subject</label>
+                    <input class="input-field" type="text" name="subject" placeholder="Enter the subject of your message here...">
+
+                    <label>Email</label>
+                    <input class="input-field" type="text" name="email" placeholder="Enter your email address here...">
+    
+                    <label>Message</label>
+                    <textarea class="input-field" name="message" placeholder="Enter what's on your mind here..."></textarea>
+
+                    <input id="submit-btn" type="submit" value="Send">
+                </form>
             </div>
         </section>
 
     </main>
 
     <footer>
-        <h2>❤️ Made with love by Jonny.</h2>
-        <div>
+        <h2 class="salutation">Made with ❤️ by Jonny.</h2>
+        <div class="copyright">
             &copy; 2021 JonnyCanoCan Inc.
         </div>
     </footer>
 
-    <script src="./assets/js/master-script.js"></script>
+    <script type="text/JavaScript" src="./assets/js/master-script.js"></script>
 </body>
 </html>
