@@ -7,6 +7,7 @@ I have collected some of my work so far into this display of my skill as a web d
 * HTML
 * CSS
 * JavaScript
+* jQuery
 
 ## Website
 https://JonnyCano.github.io/brazil
