@@ -335,6 +335,17 @@ h6 {
   padding: 14px;
 }
 
+.new-about {
+  display: flex;
+  align-content: space-between;
+  justify-content: center;
+}
+
+.card {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 #contact-form{
 	display: block;
 	max-width: 600px;
