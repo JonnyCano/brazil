@@ -405,6 +405,11 @@ footer h2 {
   color: var(--main-text);
 }
 
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
 @media screen and (max-width: 1200px) {
     .main-container {
         width: 95%;
